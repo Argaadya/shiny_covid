@@ -66,5 +66,3 @@ theme_algo <- theme(
   plot.title = element_text(family = "serif", size = 18)
 )
 
-
-covid
