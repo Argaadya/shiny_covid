@@ -60,7 +60,8 @@ covid <- case_confirmed %>%
   ) %>% 
   rename(State = `Province/State`,
          Country = `Country/Region`
-         )
+         ) %>% 
+  filter(!(Country %in% c("Diamond Princess", "MS Zaandam")))
 
 # Data from the latest date only
 
